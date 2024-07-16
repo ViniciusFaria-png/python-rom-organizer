@@ -80,7 +80,7 @@ def rom_organizer(path):
                         print(f"RAR file extracted: {rom} -> {dir_path}")
 
                 os.remove(rom_path)
-                print(f"{type[1:].upper()} file removed: {rom}")
+                print(f"{ext[1:].upper()} file removed: {rom}")
             except PermissionError as e:
                 print(f"Permission error when extracting {rom}: {e}")
         else:
